@@ -8,7 +8,7 @@
 
 **The year is 2020.**
 
-**Granted that it's already a strange time just to be human (judging by the current state of affairs).**
+**Granted it's already a strange time just to be human (judging by the current state of affairs).**
 
 Furthermore, it is increasing becoming a stranger time to be front-end developer too (during the current stat eof the web). Not only is there an exhausting list of competing, and often conflicting, ways to structure front-end projects. Ranging from vigorous (and often highly emotional) debates on the degree to which one should rely on JavaScript to whether the CSS language itself is an sufficient mechanism to style our interfaces.
 
