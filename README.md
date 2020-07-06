@@ -18,7 +18,7 @@ Don't get me wrong. This is one of the beauties of React (compared to a lot of c
 
 **So where does this leave us?**
 
-If we were to look to [Medium.com](https://medium.com/search?q=react%20project%20structure) or [Dev.to](https://dev.to/search?q=react%20project%20structure) it would mean selecting one of thousands of brand new silver-bullet, one-size-fits-all correct™ ways of structuring React projects. Some of these has pretty clever names like [Fractal](https://hackernoon.com/fractal-a-react-app-structure-for-infinite-scale-4dab943092af) or [Atomic React](https://arc.js.org/), and for what it's worth, I am by no means discounting this approach - they wouldn't exist if they didn't resonate with a large slice of the React community.
+If we were to look to [Medium.com](https://medium.com/search?q=react%20project%20structure) or [Dev.to](https://dev.to/search?q=react%20project%20structure) it probably entails selecting from a neverending array of "silver-bullet", one-size-fits-all, correct™ ways of structuring React projects. Some of these has pretty clever names like [Fractal](https://hackernoon.com/fractal-a-react-app-structure-for-infinite-scale-4dab943092af) or [Atomic React](https://arc.js.org/), and for what it's worth, I am by no means discounting this approach - they wouldn't exist if they didn't resonate with a large slice of the React community.
 
 If it works well for you, then more power to you!
 
