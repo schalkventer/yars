@@ -24,9 +24,7 @@ If it works well for you, then more power to you!
 
 However, for me personally, I tend to subscribe to [Dan Abramov's approach](https://react-file-structure.surge.sh/) of just _"[moving] files around until it feels right"_. Which, admittedly, advocates nothing short of a [Kierkegaardien](https://en.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard) approach in which all of us must figure out our own project structure (while pushing production code) "with fear and trembling".
 
-**If you are looking for a paint-by-numbers formula to structure your React projects then the above examples are probably more aligned to your needs.**
-
-**The intent behind this collection of conventions is that you following the thought process that lead me to them, as a means to help you find the structure that works best for you, your team and your project's needs**.
+**If you are looking for a paint-by-numbers formula to structure your React projects then the above examples are probably more aligned to your needs. The intent behind this collection of conventions is that you following the thought process that lead me to them, as a means to help you find the structure that works best for you, your team and your project's needs**.
 
 <!-- omit in toc -->
 ## Table of Contents
