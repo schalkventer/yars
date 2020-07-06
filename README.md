@@ -14,7 +14,7 @@ Furthermore, it is increasing becoming a stranger time to be front-end developer
 
 Unfortunately, things don't get much better upon narrowing our scope to specific toolchains and/or technologies. Granted, there are degrees to which specific tools lend themselves to disagreement amongst their various communities. However as the universe would have it, my preferred tool-chain: the [React](https://reactjs.org/) ecosystem is one of the bigger offenders.
 
-Don't get me wrong. This is one of the beauties of React (compared to a lot of competitors): that it gives you an non-opinionated toolbelt of primitives that you can co-configure in whatever manner you see fit. It's worthwhile to acknowledge that this philosophy is baked into the [design of React's itself]((https://reactjs.org/docs/design-principles.html)). Which subsequently means that one of the primary pain-points (in true open-source fashion) is that there is no clear consensus on how to employ these tools.
+Don't get me wrong. This is one of the beauties of React (compared to a lot of competitors): that it gives you a non-opinionated toolbelt of primitives that you can co-configure in whatever manner you see fit. It's worthwhile to acknowledge that this philosophy is baked into the [design of React's itself]((https://reactjs.org/docs/design-principles.html)). Which subsequently means that one of the primary pain-points (in true open-source fashion) is that there is no clear consensus on how to employ these tools.
 
 **So where does this leave us?**
 
