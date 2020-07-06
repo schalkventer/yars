@@ -68,7 +68,7 @@ If you are building a traditional website (or basic one-man webapp) then this st
 
 For simpler projects, you might be interested in another open-source tool of mine: [Millimeter](https://github.com/schalkventer/millimeter)
 
-### ⚪ A JAMstack architecture
+### 🟡 A JAMstack approach
 
 ...
 
