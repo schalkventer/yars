@@ -12,7 +12,7 @@
 
 Furthermore, it is increasing becoming a stranger time to be front-end developer too. Not only are there exhaustive lists of competing, and often conflicting, ways to structure front-end projects. As you're reading this, the daily Twitter-wars burn ever bright. These range from the degree to which one should rely on JavaScript; to whether the CSS language itself is an sufficient mechanism to style our interfaces.
 
-Unfortunately, things don't get much better upon narrowing our scope to a specific tool-chain and/or technology. Granted, there are degrees to which specific tools lend themselves to disagreement amongst their various communities. As the universe would have it, my preferred tool-chain, the [React](https://reactjs.org/) ecosystem is one of the bigger offenders.
+Unfortunately, things don't get much better upon narrowing our scope to specific toolchains and/or technologies. Granted, there are degrees to which specific tools lend themselves to disagreement amongst their various communities. As the universe would have it, my preferred tool-chain, the [React](https://reactjs.org/) ecosystem is one of the bigger offenders.
 
 Don't get me wrong. This is one of the beauties of React (compared to other frameworks): that it gives you an non-opinionated toolbelt of primitives that you can co-configure in whatever manner you see fit. It's worthwhile to acknowledge that this philosophy is baked into the [design of React's itself]((https://reactjs.org/docs/design-principles.html)). Which subsequently means that one of the primary pain-points (in true open-source fashion) is that there is no clear consensus on how to employ these tools.
 
