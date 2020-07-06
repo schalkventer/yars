@@ -1,0 +1,328 @@
+[
+    {
+        "id": "519930df-ba0a-4bde-af6e-659c52e0a83b",
+        "sectionTitle": "Demographics",
+        "cards": [
+            {
+                "title": "Gender",
+                "columns": 1
+            },
+            {
+                "title": "Community Size",
+                "columns": 1
+            },
+            {
+                "title": "Age",
+                "columns": 1
+            },
+            {
+                "title": "R14. Demographics: race",
+                "newTitle": "Race",
+                "columns": 1
+            },
+
+            
+
+            {
+                "title": "Province",
+                "columns": 1
+            },
+    
+            {
+                "title": "Metro",
+                "columns": 1
+            },
+            {
+                "title": "Personal Income",
+                "columns": 1
+            },
+            {
+                "title": "Household Income",
+                "columns": 1
+            },
+
+
+
+            {
+                "title": "A2. Languages: read & understand",
+                "newTitle": "Understood languages",
+                "columns": 4
+            },
+      
+
+
+            {
+                "title": "A1. Language: Interviewed in",
+                "newTitle": "Interviewed Language",
+                "columns": 1
+            },
+            {
+                "title": "A3. Language: Preferred",
+                "newTitle": "Preferred language",
+                "columns": 1
+            },
+            {
+                "title": "R15. Demographics: language personally spoken at home",
+                "newTitle": "Spoken at home",
+                "columns": 2
+            },
+
+            {
+                "title": "District Council",
+                "columns": 4    
+            },
+
+
+
+            {
+                "title": "SEM 20",
+                "columns": 4
+            },
+
+
+
+            {
+                "title": "SEM 10",
+                "columns": 2
+            },
+            {
+                "title": "Living Standards Measure",
+                "columns": 2
+            },
+
+
+
+            {
+                "title": "SEM 5",
+                "columns": 1
+            },
+            {
+                "title": "SEM 3",
+                "columns": 1
+            },
+            {
+                "title": "Neighbourhood Lifestyle Index",
+                "columns": 1
+            }
+        ]
+    },
+
+
+
+    {
+        "id": "af6f9289-c2d3-4ae4-b5ea-e474011e65ce",
+        "sectionTitle": "Media Consumption",
+        "cards": [
+            {
+                "title": "B1. Read a Newspaper or Online News Site in the past 12 months",
+                "newTitle": "Newspaper Mediums",
+                "columns": 1
+            },
+            {
+                "title": "B2. Read a Magazine or Online Magzine Content in the past 12 months",
+                "newTitle": "Magazine Mediums",
+                "columns": 1
+            },
+            {
+                "title": "B16. Advertising Use",
+                "newTitle": "Advertising",
+                "columns": 1
+            },
+            {
+                "title": "C3. Cellphones: type of cellphone",
+                "newTitle": "Personal Cell Usage",
+                "columns": 1
+            },
+
+
+
+            {
+                "title": "K1. Listening: how often listen to radio",
+                "newTitle": "Radio",
+                "columns": 2
+            },
+            {
+                "title": "L1. Viewing: how often watch television",
+                "newTitle": "TV",
+                "columns": 2
+            },
+
+            
+
+            {
+                "title": "B14. Newspaper Topics",
+                "newTitle": "Newspaper Topics",
+                "columns": 2
+            },
+            {
+                "title": "B15. Magazine Topics",
+                "newTitle": "Magazine Topics",
+                "columns": 2
+            },
+
+
+
+            {
+                "title": "C4. Cellphones: network",
+                "newTitle": "Network Provider",
+                "columns": 1
+            },
+            {
+                "title": "D4. Digital: average Internet use on weekend",
+                "newTitle": "Internet on Weekends",
+                "columns": 1
+            },
+            {
+                "title": "D4. Digital: average Internet use on weekday",
+                "newTitle": "Internet on Weekdays",
+                "columns": 1
+            },
+            {
+                "title": "D2. Digital: device used to access the Internet",
+                "newTitle": "Internet Devices",
+                "columns": 1
+            },
+
+
+
+            {
+                "title": "D3. Digital: Internet use/activities",
+                "newTitle": "Internet Activities",
+                "columns": 2
+            },
+            {
+
+                "title": "D1. Digital: Internet access frequency",
+                "newTitle": "Internet Usage",
+                "columns": 2
+            }
+        ]
+    },
+    
+    
+
+    {
+        "id": "b8aa9100-699e-4346-bef0-80a3a81f550b",
+        "sectionTitle": "Lifestyle",
+        "cards": [
+            {
+                "title": "F4. Finance: use credit card",
+                "newTitle": "Uses credit card",
+                "columns": 1
+            },
+            {
+                "title": "F1. Finance: use government issued SASSA grant card",
+                "newTitle": "Uses SASSA grant card",
+                "columns": 1
+            },
+            {
+                "title": "E4. Motor Vehicles: purchased new or secondhand",
+                "newTitle": "Personal Vehicle",
+                "columns": 1
+            },
+            {
+                "title": "E1. Motor Vehicles: how many vehicles in household",
+                "newTitle": "Household Vehicles",
+                "columns": 1
+            },
+
+
+
+            {
+                "title": "E1. Motor Vehicles: most driven vehicles",
+                "newTitle": "Most driven vehicles",
+                "columns": 4
+            },
+
+
+
+            {
+                "title": "F2. Finance: banks with an account/card",
+                "newTitle": "Banking Services",
+                "columns": 2
+            },
+            {
+                "title": "F3. Finance: primary bank",
+                "newTitle": "Primary Bank",
+                "columns": 2
+            },
+
+
+
+            {
+                "title": "G2. Groceries: grocery story spend most money",
+                "newTitle": "Primary Groceries",
+                "columns": 4
+            },
+            {
+                "title": "G2. Groceries: grocery story spend second most money",
+                "newTitle": "Secondary Groceries",
+                "columns": 2
+            },
+            {
+                "title": "G2. Groceries: grocery story spend third most money",
+                "newTitle": "Tertiary Groceries",
+                "columns": 2
+            } 
+        ]
+    },
+
+
+    {
+        "id": "66afe3af-92ed-4474-938a-fd63c8a30a01",
+        "sectionTitle": "Household",
+        "cards": [
+            {
+                "title": "N2. SEM: Where does the water you use in your home come from ?",
+                "newTitle": "Water Source",
+                "columns": 1
+            },
+
+
+
+            {
+                "title": "N3. SEM: How many sleeping rooms does this dwelling have? ",
+                "newTitle": "Sleeping Rooms",
+                "columns": 1
+            },
+            {
+                "title": "N4. SEM: Type of flooring",
+                "newTitle": "Flooring",
+                "columns": 1
+            },
+            {
+                "title": "N4. SEM: Nearby facilities",
+                "newTitle": "Public Services",
+                "columns": 1
+            },
+
+
+            {
+                "title": "P2. LSM: Type of Home",
+                "newTitle": "Home",
+                "columns": 2
+            },
+            {
+                "title": "N1. SEM: Which of the following do you have in your household ?",
+                "newTitle": "Appliances",
+                "columns": 2
+            },
+
+
+
+            {
+                "title": "P1. LSM: Which of the following do you have in your household ?",
+                "newTitle": "Family items",
+                "columns": 4 
+            },
+
+
+
+            {
+                "title": "R9. Demographics: household total monthly income",
+                "newTitle": "Household Income",
+                "columns": 4
+            }
+        ]
+    }
+]
