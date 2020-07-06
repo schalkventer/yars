@@ -24,7 +24,7 @@ However, for me personally, I tend to subscribe to [Dan Abramov's approach](http
 
 **Which explains the tongue-in-cheek name of this repository.**
 
-**If you are looking for a paint-by-numbers formula to structure your React projects then the above examples are probably more aligned to your needs. The intent behind this collection of conventions is that you following the thought process that lead me to them, as a means to help you find the structure that works best for you, your team and your project's needs**.
+**My intent behind it is not to provide a paint-by-numbers formula to structure React projects (then the above examples are probably more aligned to your needs), but rather to document my the thought process and reasoning that lead to the current conventions I'm using. My hope is that this might provide other React developers a reference by which to figure out the exact structure that works best for them, their teams  or your project's needs**.
 
 <!-- omit in toc -->
 ## Table of Contents
