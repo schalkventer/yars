@@ -32,11 +32,11 @@ However, for me personally, I tend to subscribe to [Dan Abramov's approach](http
 ## Table of Contents
 
 - [Guiding Principles](#guiding-principles)
-  - [1️⃣ Assumed Complexity](#1️⃣-assumed-complexity)
-  - [2️⃣ Contributor Friendly](#2️⃣-contributor-friendly)
-  - [2️⃣ Decoupled UI and App Logic](#2️⃣-decoupled-ui-and-app-logic)
-  - [3️⃣ API Driven Development](#3️⃣-api-driven-development)
-  - [3️⃣ Avoiding over-abstraction](#3️⃣-avoiding-over-abstraction)
+  - [🟢 Assumed Complexity](#🟢-assumed-complexity)
+  - [🔵 Contributor Friendly](#🔵-contributor-friendly)
+  - [🟣 Decoupled UI and App Logic](#🟣-decoupled-ui-and-app-logic)
+  - [🟤 API Driven Development](#🟤-api-driven-development)
+  - [🔴 Avoiding over-abstraction](#🔴-avoiding-over-abstraction)
 - [Structures](#structures)
   - [React Components](#react-components)
     - [⚙️ Element Components](#️-element-components)
@@ -62,7 +62,7 @@ However, for me personally, I tend to subscribe to [Dan Abramov's approach](http
 
 ## Guiding Principles
 
-### 1️⃣ Assumed Complexity
+### 🟢 Assumed Complexity
 
 **This structure assumes a minimum level of complexity inherent in codebase/project that it is being applied to.**
 
@@ -71,7 +71,7 @@ If you are building a traditional website (or basic one-man webapp) then this st
 
 My personal rule of thumb is that if the project's complexity justifies adding dedicated documentation and/or static typing by means of TypeScript (which is assumed in this structure) then it is probably sufficiently complex.
 
-### 2️⃣ Contributor Friendly
+### 🔵 Contributor Friendly
 
 **This structure assumes that you will not being the only person contributing and/or maintaining this codebase (either at this current moment or in the foreseeable future)**.
 
@@ -85,7 +85,7 @@ For example:
 - If you are a developer primarily versed in HTML, CSS and DOM-facing JavaScript, and you need to change the way an "add to cart" button works in the UI layer then you should not have to know anything about how items get added to the cart in the core-app logic/database. You should only need to deal with the following (TypeScript documented) callback (passed to the view as a prop): `type onAddToCart = (itemId: string) => Promise<Error | void>`.
 - If you are a developer primarily versed in NodeJS or business-logic-facing JavaScript, and you need to change the way items are added to the shopping cart (or related logic) inside the core app logic  you should not need to know how (or where) the above `onAddCart` callback is used inside the UI layer. The only requirement should be that you need to the honour the TypeScript-based API contract insofar that the callback takes the ID of the item and assumes that it was added successfully unless an `Error` is returned (which is handled in the UI).
 
-### 2️⃣ Decoupled UI and App Logic
+### 🟣 Decoupled UI and App Logic
 
 The above means that the structure is split into to broad layers of concern:
 
@@ -102,7 +102,7 @@ All files in `ui` folder should only be concerned with the UI state in the brows
 |**App logic**| Files located in `src/app`. Should run `yarn app` when working on this layer. Fetches and unifies the data retrieved from Database API's in a semantic manner to be passed along to the UI (via React props exposed by the view components). Usually transforms the data and behaviour exposed by endpoints into props (either as initial values or callbacks) that are passed to views. These file themselves should **NEVER** contain any markup, CSS or DOM-facing JavaScript| Gatsby, Redux, RESTful API, GraphQL, HTML web storage API or even node scripts that fetch/pass data from local markdown/JSON files.
 |**UI**|Files located in `src/ui`. These are the React components that exclusively handle UI concerns such as output HTML, CSS and DOM-facing JavaScript. These should be developed exclusively against mocked data fixtures located and in the `src/ui` folder itself.|Storybook, Styled Components, Faker, Material UI,
 
-### 3️⃣ API Driven Development
+### 🟤 API Driven Development
 
 **Tying into the above, this structure assumes full-on adoption of the [principle of modular programming](https://en.wikipedia.org/wiki/Modular_programming).**
 
@@ -114,7 +114,7 @@ Furthermore, all files are pre-pended by their associated modules. For example t
 
 The only exception is the index.js file that is at the root of all modules. This file declares and returns the API exposed by the module.
 
-### 3️⃣ Avoiding over-abstraction
+### 🔴 Avoiding over-abstraction
 
 This approach learns heavily on [Sandi Metz](https://www.sandimetz.com/)'s thinking on abstraction in programming, [going all the way back to 2016](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction). In short:
 
