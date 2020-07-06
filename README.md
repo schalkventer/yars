@@ -64,9 +64,13 @@ However, for me personally, I tend to subscribe to [Dan Abramov's approach](http
 
 **This approach assumes a certain level of complexity inherent in the codebase/project that it is being applied to.**
 
-If you are building a traditional website (or basic one-man webapp) then this structure is probably overkill, and might cause more trouble than it's worth.
+If you are building a traditional website (or basic one-man webapp) then this structure is probably overkill, and might cause more trouble than it's worth. My personal rule of thumb is that if the project's complexity justifies adding dedicated documentation and/or static typing by means of TypeScript (which is assumed in this structure) then it is probably sufficiently complex.
 
-My personal rule of thumb is that if the project's complexity justifies adding dedicated documentation and/or static typing by means of TypeScript (which is assumed in this structure) then it is probably sufficiently complex.
+For simpler projects, you might be interested in another open-source tool of mine: [Millimeter](https://github.com/schalkventer/millimeter)
+
+### ⚪ A JAMstack architecture
+
+...
 
 ### 🔵 Contributor Friendly
 
