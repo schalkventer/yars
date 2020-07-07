@@ -1,7 +1,7 @@
 <!-- omit in toc -->
 # 🏰 Yet Another React Structure _(YARS)_
 
-*⭐️ If you find this useful please leave a star ⭐️*
+*⭐️ If you find this useful please star it on [Github](https://github.com/schalkventer/yars) ⭐️*
 
 ![](docs/assets/image.png)
 
