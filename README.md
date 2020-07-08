@@ -3,6 +3,8 @@
 
 *⭐️ If you find this useful please star it on [Github](https://github.com/schalkventer/yars) ⭐️*
 
+_Note that this is still a work in progress, so some sections are incomplete_
+
 ![](docs/assets/image.png)
 
 <!-- omit in toc -->
