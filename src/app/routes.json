@@ -1,6 +1,10 @@
 [
   {
     "path": "/",
-    "connector": "Filters"
+    "connector": "Homepage"
+  },
+  {
+    "path": "/404",
+    "connector": "Homepage"
   }
 ]

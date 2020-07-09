@@ -2,13 +2,13 @@ import React from 'react';
 import { create } from '@storybook/theming';
 import { addParameters, addDecorator } from '@storybook/react';
 
-import { Base } from '../src/ui/components/elements';
+import { Base } from '../src/ui/views';
 
 const ORDER = [
 	'tokens',
 	'elements',
 	'custom',
-	'view-components',
+	'views',
 	'connectors',
 ]
 
