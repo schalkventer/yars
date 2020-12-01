@@ -1,0 +1,146 @@
+import { Meta, Preview } from '@storybook/addon-docs/blocks';
+
+<Meta title="documentation/project/Technology" />
+
+<!-- omit in toc -->
+# Technology
+
+Dolor quas omnis voluptatem ut cumque eos.
+
+<!-- omit in toc -->
+## Table of Contents
+
+- [TypeScript](#typescript)
+- [React](#react)
+  - [Hooks](#hooks)
+  - [React Use](#react-use)
+- [Storybook](#storybook)
+  - [Mocking API](#mocking-api)
+- [Gatsby](#gatsby)
+  - [Plugins](#plugins)
+  - [API](#api)
+- [Styling](#styling)
+  - [Material UI](#material-ui)
+  - [Styled Components](#styled-components)
+  - [Polished](#polished)
+- [Linting and Testing](#linting-and-testing)
+  - [ESLint](#eslint)
+  - [Stylelint](#stylelint)
+  - [Lint Staged](#lint-staged)
+  - [Husky](#husky)
+  - [Jest](#jest)
+- [Utility Libraries](#utility-libraries)
+  - [Axios](#axios)
+  - [Lodash](#lodash)
+  - [Validator](#validator)
+  - [Date FNS](#date-fns)
+
+## TypeScript
+
+**TypeScript is a [super-set programming language](https://en.wikipedia.org/wiki/Subset) built on top of JavaScript. This means that all JavaScript expressions are still valid in Typescript, however Typescript adds additional [type-checking functionality](https://en.wikipedia.org/wiki/Type_system) on top of JavaScript.**
+
+Note that parsing of TypeScript in this project is done via [Babel](https://babeljs.io/) and not via the [native TypeScript compiler](https://en.wikipedia.org/wiki/TypeScript#Compiler). There are several benefits to this:
+
+- Using Babel adheres to the single [responsibility principle (SRP)](https://en.wikipedia.org/wiki/Single_responsibility_principle) insofar that we are not mixing several concerns into a single tool (i.e. both transpilation and type-checking/linting).
+- Babel is noticably faster since we are no longer parsing types while doing hot-reloading (we are merely converting the syntax into regular JavaScript).
+- By it's very nature Babel is more flexable and modular when it comes to project configuration, given that it is build with third-party plugins/presets in mind.
+
+In addition, also note that ESLint is used in this project. [TSLint has been deprecated by Palantir](https://medium.com/palantir/tslint-in-2019-1a144c2317a9), and ESLint is now seen as the defacto TypeScrit linting tool going forward.
+
+## React
+
+...
+
+### Hooks
+
+...
+
+### React Use
+
+...
+
+## Storybook
+
+[Storybook](https://storybook.js.org/) a developer-facing framework that facilitates the development and testing of UI components seperate from an app's business logic. This allows the UI to be developed agnostic from the project's underlying logic, environment configurations and/or API end-points. The benefit of this is that developers/designers are not blocked or dependant on changes/finalisation of the internal configurations of the webapp itself. Furthermore, developers are able to mount (and test) user-facing component is different states without having to manually trigger those states vai internal app logic/interactivity.
+
+### Mocking API
+
+...
+
+## Gatsby
+
+...
+
+### Plugins
+
+...
+
+### API
+
+...
+
+## Styling
+
+...
+
+### Material UI
+
+Furthermore, in the interest of development speed and overhead, the third-party [React component-based](https://reactjs.org/docs/react-component.html) library called [Material UI](https://material-ui.com/) has been pre-selected to underpin all React components in this project. [Material UI](https://material-ui.com/) is considered the canonical implementation of the [Material Design Spec](https://material.io/) (an extremely comprehensive and well-documented UI design system) for React by the [Material Design Components](https://material.io/components/) team.
+
+### Styled Components
+
+
+**Styled Components is a library that enables React component to be styled via the common CSS syntax**
+
+[Material UI](https://material-ui.com/) uses a CSS-in-JavaScript tool (called [JSS](https://cssinjs.org/)) under the hood. It exposes a built-in `withStyles()` method (as part of `@material-ui/core`) for overriding default [Material UI](https://material-ui.com) styling. At the same time, [Material UI](https://material-ui.com) is upfront about the fact that it is [completely interoperable with other CSS in JavaScript tooling](https://material-ui.com/guides/interoperability/). This project has (due to [Material UI](https://material-ui.com/)'s support for interoperability) opted to use a [Styled Components](https://www.styled-components.com) instead of the built-in Material UI [JSS](https://cssinjs.org/) hooks for the following reasons:
+
+- [Styled Components](https://www.styled-components.com) has a massive online community compared to [JSS](https://cssinjs.org/).
+- [Styled Components](https://www.styled-components.com) is easier to read since no class names or `withStyles` composition are required.
+- [Styled Components](https://www.styled-components.com) can be written in the regular CSS syntax (via [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)).
+- [Stylelint](https://stylelint.io/) can be used to lint [Styled Components](https://www.styled-components.com) styling.
+- [Styled Components](https://www.styled-components.com) supports [Sass](https://sass-lang.com/) logic out of the box.
+- [Styled Components](https://www.styled-components.com) supports global [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) out of the box.
+
+### Polished
+
+...
+
+## Linting and Testing
+
+
+### ESLint
+
+...
+
+### Stylelint
+
+...
+
+### Lint Staged
+
+...
+
+### Husky
+
+...
+
+### Jest
+
+...
+
+## Utility Libraries
+
+
+### Axios
+
+...
+
+### Lodash
+
+...
+
+### Validator
+
+...
+
+### Date FNS
