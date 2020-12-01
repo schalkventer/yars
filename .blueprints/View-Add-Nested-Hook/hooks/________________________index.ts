@@ -1,1 +1,0 @@
-export { {{ $hook }} } from './{{name}}';

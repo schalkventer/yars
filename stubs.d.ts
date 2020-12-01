@@ -5,8 +5,11 @@
 declare namespace NodeJS {
   interface ProcessEnv {
     NODE_ENV: 'development' | 'production' | 'test';
+    PUBLIC_URL: string;
   }
 }
+
+/* File type stubs */
 
 declare module '*.md' {
   const src: string;
@@ -52,7 +55,92 @@ declare module '*.svg' {
   export default src;
 }
 
+declare module '*.ttf' {
+  const src: string;
+  export default src;
+}
+
 declare module '*.woff' {
   const src: string;
   export default src;
+}
+
+/* Third-party stubs */
+
+declare module 'markdown-it-attrs' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'markdown-it-footnote' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'markdown-it-ins' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'markdown-it-mark' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'markdown-it-sub' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'markdown-it-sup' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'markdown-it-sup' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'markdown-it-deflist' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'markdown-it-abbr' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'retext' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'markdown-it-anchor' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'retext-smartypants' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
+}
+
+declare module 'trunc-html' {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const types: any;
+  export default types;
 }

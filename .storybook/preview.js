@@ -1,49 +1,74 @@
-import React from 'react';
-import { create } from '@storybook/theming';
-import { addParameters, addDecorator } from '@storybook/react';
+import React from "react"
+import { addDecorator } from "@storybook/react"
+import { Base } from "../src/components/Base"
 
-import { Base } from '../src/ui/views';
+const ORDER = [ "documentation-introduction", "documentation-project",  "documentation-components",  "documentation-views", "components", "views"]
 
-const ORDER = [
-	'tokens',
-	'elements',
-	'custom',
-	'views',
-	'connectors',
-]
+const addBase = Story => (
+  <Base>
+    <Story />
+  </Base>
+)
 
-/**
- * Wraps all Storybook previews in the `<Base />` component.
- */
-addDecorator((Story) => <Base><Story /></Base>);
+addDecorator(addBase)
 
-/*
- * Configure Storybook 
- */
+export const parameters = {
+  showRoots: true,
+  layout: "fullscreen",
+  actions: { argTypesRegex: "^on[A-Z].*" },
 
-const theme = create({
-  base: 'light',
-  brandTitle: 'Webapp Documentation',
-});
+  storySort: (a, b) => {
+    const aIndex = ORDER.findIndex(value => a[0].includes(value))
+    const bIndex = ORDER.findIndex(value => b[0].includes(value))
 
-addParameters({ 
-	options: { 
-		theme,
-		name: 'Webapp Documentation',
-		showRoots: true,
-		storySort: (a, b) => {
-			const aIndex = ORDER.findIndex(value => a[0].includes(value));
-			const bIndex = ORDER.findIndex(value => b[0].includes(value));
-			
-			if (aIndex < bIndex) {
-				return -1;
-			}
-			
-			if (aIndex > bIndex) {
-				return 1;
-			}
-			
-			return 0;
+    if (aIndex < bIndex) {
+      return -1
     }
-	} 
-});
+
+    if (aIndex > bIndex) {
+      return 1
+    }
+
+    return 0
+  },
+}
+
+
+
+
+// import React from 'react';
+// import { create } from '@storybook/theming';
+// import { addDecorator, addParameters } from '@storybook/react';
+// import { Base } from '../src/ui/elements';
+
+
+
+// const addDefaultStyles = Story => (
+//   <Base>
+//     <Story />
+//   </Base>
+// );
+// addDecorator(addDefaultStyles);
+
+// const theme = create({
+//   base: 'light',
+//   brandTitle: '🏡 HouseME Front-end UI',
+// });
+
+// addParameters({
+//   options: {
+//     theme,
+//     showRoots: true,
+//     storySort: (a, b) => {
+//       const aIndex = ORDER.findIndex(value => a[0].includes(value));
+//       const bIndex = ORDER.findIndex(value => b[0].includes(value));
+//       if (aIndex < bIndex) {
+//         return -1;
+//       }
+//       if (aIndex > bIndex) {
+//         return 1;
+//       }
+//       return 0;
+//     },
+//   },
+// });

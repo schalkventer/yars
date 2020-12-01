@@ -1,8 +1,6 @@
 {
+  "blueprint.templatesPath": [".blueprints"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "blueprint.templatesPath": [
-    "./.blueprints",
-  ]
 }

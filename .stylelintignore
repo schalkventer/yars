@@ -2,4 +2,4 @@
 *.jpeg
 *.png
 *.json
-.blueprints
+.blueprints/*

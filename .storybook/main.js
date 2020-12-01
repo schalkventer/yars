@@ -1,26 +1,14 @@
-/*
- * Exported configuration
- */
+const path = require('path');
 
 module.exports = {
-  stories: ['../src/**/*.stories.tsx'],
-  addons: [
-    '@storybook/addon-actions/register',
-    '@storybook/preset-create-react-app'
-  ],
-
-  presets: [
-    '@storybook/preset-create-react-app',
-  ],
+  stories: ["../docs/**/*.stories.mdx", "../src/**/*.stories.tsx"],
+  addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
 
   /**
-   * Gets rid of "asset size limit" warning during building of Storybook.
+   * Allows usage of `@` TypeScript alias in Storybook
    */
-  webpackFinal: config => ({
-    ...config,
-    performance: {
-      ...config.performance,
-      hints: false,
-    },
-  }),
-};
+  webpackFinal: async config => {
+    config.resolve.alias['@'] = path.resolve(__dirname, '../src');
+    return config;
+  },
+}

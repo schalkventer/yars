@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -8,13 +9,19 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "paths": {
+    "@/*": ["src/*"]
   },
   "include": ["stubs.d.ts", "docs", "src"],
-  "exclude": ["node_modules", ".history", ".cache", ".blueprint"]
+  "exclude": ["node_modules"]
 }

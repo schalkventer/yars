@@ -25,12 +25,15 @@ const fileMockExtensions = [
   'aac',
   'oga',
   'md',
+  'css',
 ].join('|');
 
 /**
  * Mapping the above array of stubs to the mock files in the folder above.
  */
 const moduleNameMapper = {
+  '@/generated.types$': '<rootDir>/src/generated.types.tsx',
+  '@/([^\\.]*)$': '<rootDir>/src/$1',
   [`.+\\.(${fileMockExtensions})$`]: '<rootDir>/jest.stub.js',
 };
 
