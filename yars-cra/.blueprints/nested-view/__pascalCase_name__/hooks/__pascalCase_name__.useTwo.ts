@@ -3,7 +3,7 @@ import { useToggle } from 'react-use'
 import * as types from '../types/{{pascalCase name}}.{{ $TwoPascal }}.types'
 import context from '../api/{{pascalCase name}}.context'
 
-export const {{ $TwoPascal }} = (): [types.State, types.Actions] => {
+export const use{{ $TwoPascal }} = (): [types.State, types.Actions] => {
     const { two: { readLocal, saveLocal } } = useContext(context)
     const [value, toggleValue] = useToggle(readLocal())
 
@@ -14,5 +14,5 @@ export const {{ $TwoPascal }} = (): [types.State, types.Actions] => {
     return [{ value }, { toggleValue }]
 }
 
-export default {{ $TwoPascal }}
+export default use{{ $TwoPascal }}
 
