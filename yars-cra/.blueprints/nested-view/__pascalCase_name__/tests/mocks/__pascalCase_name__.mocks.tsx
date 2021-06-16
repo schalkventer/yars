@@ -1,20 +1,20 @@
 import React, { FC } from "react";
 import faker from "faker";
 import { action } from "@storybook/addon-actions";
-import context from '../../api/Complex.context'
-import * as types from "../../types/Complex.types";
-import * as oneMocks from './Complex.One.mocks'
-import * as twoMocks from './Complex.Two.mocks'
+import context from '../../api/{{pascalCase name}}.context'
+import * as types from "../../types/{{pascalCase name}}.types";
+import * as {{ $oneCamel }}Mocks from './{{pascalCase name}}.{{ $onePascal }}.mocks'
+import * as {{ $twoCamel }}Mocks from './{{pascalCase name}}.{{ $twoPascal }}.mocks'
 
 export const STATE: types.State = {
-  one: oneMocks.STATE,
-  two: twoMocks.STATE,
+  one: {{ $twoCamel }}Mocks.STATE,
+  two: {{ $twoCamel }}Mocks.STATE,
   counter: faker.datatype.number(),
 };
 
 export const ACTIONS: types.Actions = {
-  one: oneMocks.ACTIONS,
-  two: twoMocks.ACTIONS,
+  one: {{ $twoCamel }}Mocks.ACTIONS,
+  two: {{ $twoCamel }}Mocks.ACTIONS,
   reset: action('reset')
 };
 

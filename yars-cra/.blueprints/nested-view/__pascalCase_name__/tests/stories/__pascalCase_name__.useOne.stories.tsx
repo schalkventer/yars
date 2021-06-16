@@ -1,6 +1,5 @@
 import React from "react";
 import {{ $OnePascal }} from "../../components/{{pascalCase name}}.{{ $OnePascal }}";
-import * as mocks from "../mocks/{{pascalCase name}}.{{ $OnePascal }}.mocks";
 import use{{ $OnePascal }} from '../../hooks/{{pascalCase name}}.use{{ $OnePascal }}'
 import { Provider } from '../mocks/{{pascalCase name}}.mocks'
 

@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import * as types from "./types/{{pascalCase name}}.types";
-import { One } from './components/{{pascalCase name}}.{{ $OnePascal }}'
-import { Two } from './components/{{pascalCase name}}.{{ $TwoPascal }}'
+import { {{ $onePascal }} } from './components/{{pascalCase name}}.{{ $OnePascal }}'
+import { {{ $twoPascal }} } from './components/{{pascalCase name}}.{{ $TwoPascal }}'
 
 /* Styled Components */
 
@@ -23,8 +23,8 @@ export const {{pascalCase name}}: FC<types.State & { actions: types.Actions }> =
 
   return (
     <Base>
-      <One { ...{{ $oneCamel }} } actions={actions.{{ $oneCamel }} } />
-      <Two { ...{{ $twoCamel }} } actions={actions.{{ $twoCamel }} } />
+      <{{ $onePascal }} { ...{{ $oneCamel }} } actions={actions.{{ $oneCamel }} } />
+      <{{ $twoPascal }} { ...{{ $twoCamel }} } actions={actions.{{ $twoCamel }} } />
 
       <div>
         <button onClick={handleReset}>Reset</button>

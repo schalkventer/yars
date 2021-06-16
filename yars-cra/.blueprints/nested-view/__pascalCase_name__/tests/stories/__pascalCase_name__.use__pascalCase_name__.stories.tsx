@@ -1,16 +1,16 @@
 import React from "react";
-import Complex from "../../{{pascalCase name}}";
+import {{pascalCase name}} from "../../{{pascalCase name}}";
 import * as mocks from "../mocks/{{pascalCase name}}.mocks";
-import useComplex from '../../hooks/{{pascalCase name}}.useComplex'
+import use{{pascalCase name}} from '../../hooks/{{pascalCase name}}.useComplex'
 
 export default {
   title: "views/{{pascalCase name}}/{{pascalCase name}}.use{{pascalCase name}}",
-  component: Complex,
+  component: {{pascalCase name}},
 };
 
 const WithHook = () => {
-  const [state, actions] = useComplex();
-  return <Complex {...state} actions={actions} />
+  const [state, actions] = use{{pascalCase name}}();
+  return <{{pascalCase name}} {...state} actions={actions} />
 }
 
 export const Default = () => <mocks.Provider><WithHook /></mocks.Provider>

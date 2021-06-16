@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import * as types from "../types/{{pascalCase name}}.types";
-import { useOne } from "./{{pascalCase name}}.use{{ $OnePascal }}";
-import { useTwo } from "./{{pascalCase name}}.use{{ $TwoPascal }}";
+import { {{ $oneCamel }} } from "./{{pascalCase name}}.use{{ $OnePascal }}";
+import {  {{ $twoCamel }} } from "./{{pascalCase name}}.use{{ $TwoPascal }}";
 
 export const use{{pascalCase name}} = (): [types.State, types.Actions] => {
   const [{{ $oneCamel }}State, {{ $oneCamel }}Actions] = use{{ $OnePascal }}();

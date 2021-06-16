@@ -1,5 +1,5 @@
-import * as {{ $oneCamel }} from './Complex.{{ $OnePascal }}.types'
-import * as {{ $twoCamel }} from './Complex.{{ $TwoPascal }}.types'
+import * as {{ $oneCamel }} from './{{pascalCase name}}.{{ $OnePascal }}.types'
+import * as {{ $twoCamel }} from './{{pascalCase name}}.{{ $TwoPascal }}.types'
 
 /**
  * @name State
@@ -18,8 +18,8 @@ export interface State {
  * @description TODO Add description
  */
 export interface Actions {
-    one: {{ $oneCamel }}.Actions,
-    two: {{ $twoCamel }}.Actions, 
+    {{ $oneCamel }}: {{ $oneCamel }}.Actions,
+    {{ $twoCamel }}: {{ $twoCamel }}.Actions, 
     reset: () => void
 }
 
@@ -36,6 +36,6 @@ export interface Props {}
  * @description TODO Add description
  */
 export interface Api {
-    one: {{ $oneCamel }}.Api,
-    two: {{ $twoCamel }}.Api, 
+    {{ $oneCamel }}: {{ $oneCamel }}.Api,
+    {{ $twoCamel }}: {{ $twoCamel }}.Api, 
 }
