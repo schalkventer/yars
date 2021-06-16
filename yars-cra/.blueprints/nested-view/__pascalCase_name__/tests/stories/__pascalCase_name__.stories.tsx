@@ -9,6 +9,6 @@ export default {
 
 export const Default = () => (
   <mocks.Provider>
-    <Complex {...mocks.STATE} actions={mocks.ACTIONS} />
+    <{{pascalCase name}} {...mocks.STATE} actions={mocks.ACTIONS} />
   </mocks.Provider>
 );

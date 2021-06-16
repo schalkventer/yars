@@ -4,7 +4,7 @@ import { createApi as create{{ $TwoPascal }}Api } from './{{pascalCase name}}.{{
 
 export const createApi = (): types.Api => {
     return {
-      one: create{{ $OnePascal }}Api(),
-      two: create{{ $TwoPascal }}Api(),
+      {{ $oneCamel }}: create{{ $OnePascal }}Api(),
+      {{ $twoCamel }}: create{{ $TwoPascal }}Api(),
     }
 }

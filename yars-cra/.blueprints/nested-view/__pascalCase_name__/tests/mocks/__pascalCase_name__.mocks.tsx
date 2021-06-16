@@ -7,25 +7,25 @@ import * as {{ $oneCamel }}Mocks from './{{pascalCase name}}.{{ $OnePascal }}.mo
 import * as {{ $twoCamel }}Mocks from './{{pascalCase name}}.{{ $TwoPascal }}.mocks'
 
 export const STATE: types.State = {
-  one: {{ $twoCamel }}Mocks.STATE,
-  two: {{ $twoCamel }}Mocks.STATE,
+  {{ $oneCamel }}: {{ $oneCamel }}Mocks.STATE,
+  {{ $twoCamel }}: {{ $twoCamel }}Mocks.STATE,
   counter: faker.datatype.number(),
 };
 
 export const ACTIONS: types.Actions = {
-  one: {{ $twoCamel }}Mocks.ACTIONS,
-  two: {{ $twoCamel }}Mocks.ACTIONS,
+  {{ $oneCamel }}: {{ $oneCamel }}Mocks.ACTIONS,
+  {{ $twoCamel }}: {{ $twoCamel }}Mocks.ACTIONS,
   reset: action('reset')
 };
 
 export const PROPS: types.Props = {};
 
 export const value: types.Api = {
-  one: {
+  {{ $oneCamel }}: {
     readLocal: () => false,
     saveLocal: () => undefined,
   },
-  two: {
+  {{ $twoCamel }}: {
     readLocal: () => false,
     saveLocal: () => undefined,
   }
