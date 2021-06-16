@@ -3,8 +3,8 @@ import faker from "faker";
 import { action } from "@storybook/addon-actions";
 import context from '../../api/{{pascalCase name}}.context'
 import * as types from "../../types/{{pascalCase name}}.types";
-import * as {{ $oneCamel }}Mocks from './{{pascalCase name}}.{{ $onePascal }}.mocks'
-import * as {{ $twoCamel }}Mocks from './{{pascalCase name}}.{{ $twoPascal }}.mocks'
+import * as {{ $oneCamel }}Mocks from './{{pascalCase name}}.{{ $OnePascal }}.mocks'
+import * as {{ $twoCamel }}Mocks from './{{pascalCase name}}.{{ $TwoPascal }}.mocks'
 
 export const STATE: types.State = {
   one: {{ $twoCamel }}Mocks.STATE,
